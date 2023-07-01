@@ -1,0 +1,13 @@
+<form action="includes/reserve.php" method="post">
+    <div class="res-form-container">
+        <label>Date</label>
+        <input type="date" name="res_date" required>
+        <label>Time</label>
+        <input type="time" name="res_time" required>
+        <label>Number of people</label>
+        <input type="number" name="res_pax" min="1" max="4" placeholder="Maximum: 4 pax" required>
+        <label>Any special requests or message</label>
+        <textarea name="res_message" cols="30" rows="10" placeholder="Describe any additional information that we should know"  required></textarea>
+        <input type="submit" name="reserve" value="Reserve">
+    </div>
+</form>

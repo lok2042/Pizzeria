@@ -1,0 +1,48 @@
+<div class="forms-container">
+
+    <!-- Register Form -->
+    <div class="register-form-container form-container">
+      <h2>Register a New Account</h2>
+      <form action="register.php" method="post">
+        <h3>Personal Details</h3>
+        <div class="inner-form-container">
+          <label>First Name</label>
+          <input type="text" name="fname" placeholder="Enter your first name" required>
+          <label>Last Name</label>
+          <input type="text" name="lname" placeholder="Enter your last name" required>
+          <label>Date of Birth</label>
+          <input type="date" name="dob" placeholder="Enter your date of birth" required>
+          <label>Contact Number</label>
+          <input type="text" name="contact" placeholder="Enter your contact number" required>
+          <label>Email Address</label>
+          <input type="text" name="email" placeholder="Enter your email address" required>
+        </div>
+        <h3>Username and Password</h3>
+        <div class="inner-form-container">
+          <label>Username</label>
+          <input type="text" name="username" minlength="5" maxlength="20" placeholder="Enter your username" required>
+          <label>Password</label>
+          <input type="password" name="password" minlength="5" maxlength="20" placeholder="Enter your password" required>
+          <label>Re-enter Password</label>
+          <input type="password" name="re_password" minlength="5" maxlength="20" placeholder="Re-enter your password" required><br>
+          <input type="submit" name="register" value="Register">
+        </div>
+      </form>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-form-container form-container">
+      <h2>Log Into Your Account</h2>
+        <form action="login.php" method="post">
+          <h3>Username and Password</h3>
+          <div class="inner-form-container">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter your username" required>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter your password" required><br>
+            <input type="submit" name="login" value="Log In">
+          </div>
+        </form>
+    </div>
+
+  </div>
